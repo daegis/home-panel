@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="cn" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>PORTAL</title>
+</head>
+<body>
+欢迎用户：<span th:text="${session.SPRING_SECURITY_CONTEXT.authentication.principal.name}"></span>
+(<span th:text="${session.SPRING_SECURITY_CONTEXT.authentication.principal.email}"></span>)
+<hr>
+<a href="/logout">logout</a>
+<hr>
+main page
+</body>
+</html>
